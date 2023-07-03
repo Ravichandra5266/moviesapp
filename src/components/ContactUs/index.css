@@ -1,0 +1,33 @@
+.contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding-bottom: 20px;
+	margin-top: auto;
+}
+.contact-flex {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 50%;
+}
+@media screen and (min-width: 996px) {
+	.contact-flex {
+		width: 25%;
+	}
+}
+.contact-title {
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+}
+@media screen and (min-width: 768px) {
+	.contact-title {
+		font-size: 32px;
+	}
+}
+.cont-icons {
+	font-size: 22px;
+}

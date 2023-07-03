@@ -1,0 +1,101 @@
+.movie-img {
+	width: 100%;
+}
+.movie-name {
+	color: var(--general-white, #fff);
+	font-size: 36px;
+	font-family: HK Grotesk;
+	font-weight: 600;
+}
+.movie-top-flex {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.bg-container {
+	background: #131313;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.movie-times {
+	color: var(--general-white, #fff);
+	font-size: 16px;
+	font-family: HK Grotesk;
+	font-weight: 600;
+}
+.movie-relase {
+	color: var(--general-white, #fff);
+	font-size: 16px;
+	font-family: HK Grotesk;
+	font-weight: 600;
+	margin-left: 15px;
+}
+.overview {
+	color: #fff;
+	font-size: 16px;
+	font-family: HK Grotesk;
+	font-weight: 500;
+}
+.title {
+	color: var(--light-blue-gray-500, #64748b);
+	font-size: 14px;
+	font-family: HK Grotesk;
+	font-weight: 600;
+}
+.sub-title {
+	color: var(--general-white, #fff);
+	font-size: 12px;
+	font-family: HK Grotesk;
+	line-height: 20px;
+}
+.movie-talks-flex {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.each-talk {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	border: 1px solid #64748b;
+	border-radius: 5px;
+	margin: 10px;
+	padding: 10px;
+	width: 100px;
+}
+@media screen and (min-width: 768px) {
+	.each-talk {
+		width: 300px;
+	}
+}
+.movie-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.each-movie-img {
+	width: 150px;
+	border: 1px solid #64748b;
+	border-radius: 5px;
+	margin: 5px;
+}
+@media screen and (min-width: 768px) {
+	.each-movie-img {
+		width: 30%;
+	}
+}
+.images-card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.m-title {
+	color: white;
+}

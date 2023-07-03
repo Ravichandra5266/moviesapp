@@ -1,0 +1,45 @@
+.slider-img {
+	width: 100%;
+}
+.slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.top-rated-movie-name{
+    text-align: center;
+}
+.slider {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.slick-prev:before,
+
+.slick-next:before {
+	color: black;
+}
+.top-rated-movies-heading{
+	color: black;
+	font-size: 24px;
+	font-family: HK Grotesk;
+	font-weight: 600;
+	margin: 0px;
+	padding-left: 50px;
+    text-align: center;
+	padding-bottom: 10px;
+}
+@media screen and (min-width:768px) {
+    .top-rated-movies-heading{
+        text-align: left;
+    }
+}
+.top-rated-container {
+	padding: 10px;
+}
+.loader-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}

@@ -1,0 +1,145 @@
+.nav-bg-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	background-color: black;
+}
+
+.nav-logo {
+	color: #e50014;
+	text-decoration: none;
+}
+
+.active {
+	border-bottom: 3px solid orangered;
+	width: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@media screen and (min-width: 768px) {
+	.lg-active {
+		border-bottom: 3px solid orangered;
+		width: 70px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.lg-nav-link {
+	color: white;
+	text-decoration: none;
+	margin-left: 20x;
+	margin-right: 20px;
+}
+.lg-nav-items {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	list-style-type: none;
+}
+
+.sm-nav {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+@media screen and (min-width: 768px) {
+	.sm-nav {
+		display: none;
+	}
+}
+.sm-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.sm-nav-items {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0px;
+	list-style-type: none;
+}
+
+.search-input-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid;
+	border-radius: 5px;
+	background-color: white;
+	height: 20px;
+	padding: 5px;
+	margin-right: 10px;
+}
+.nav-link {
+	text-decoration: none;
+	color: white;
+}
+.lg-nav {
+	display: none;
+	padding: 10px;
+}
+@media screen and (min-width: 768px) {
+	.lg-nav {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
+.lg-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin-left: 20px;
+}
+.lg-search-input-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid;
+	border-radius: 5px;
+	background-color: white;
+	height: 30px;
+	padding: 5px;
+	margin-right: 30px;
+}
+.search-inputEl {
+	outline: none;
+	border: none;
+}
+.nav-search-input-icon {
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+}
+.lg-search-account {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.lg-profile-icons {
+	font-size: 25px;
+}
+.icons {
+	font-size: 15px;
+	color: white;
+}
+.nav-ham-icon {
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+}
+.nav-search-icon {
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+}
+.search-icons {
+	color: black;
+	cursor: pointer;
+}

@@ -1,0 +1,89 @@
+/* body {
+	background-color: black;
+} */
+.login-bg-container {
+	background-image: url("https://res.cloudinary.com/dnmaskg3n/image/upload/v1687754354/netfilx_1_xwlbx6.png");
+	background-size: cover;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.login-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.login-logo-name {
+	color: #e50014;
+	text-align: center;
+}
+.login-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 90%;
+	min-height: 250px;
+	padding: 10px;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+@media screen and (min-width: 768px) {
+	.login-form {
+		width: 400px;
+	}
+}
+.login-form-logo {
+	color: var(--general-white, #fff);
+	font-size: 32px;
+	font-family: Roboto;
+	font-weight: 500;
+	line-height: 40px;
+	text-align: center;
+}
+.login-labels {
+	color: #fff;
+	font-size: 12px;
+	font-family: Roboto;
+	font-weight: 700;
+	line-height: 16px;
+	letter-spacing: 0.12px;
+	text-transform: uppercase;
+}
+.login-inputs {
+	border-radius: 5px;
+	background: #333;
+	color: white;
+	width: 296px;
+	height: 40px;
+	flex-shrink: 0;
+	outline: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+	.login-inputs {
+		width: 400px;
+	}
+}
+.error-msg{
+  color: var(--light-red-600, #DC2626);
+font-size: 15px;
+font-family: Roboto;
+font-weight: bold;
+}
+
+.login-form-btn {
+	width: 100px;
+	height: 40px;
+	border-radius: 5px;
+	background: red;
+	color: white;
+	margin: auto;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
