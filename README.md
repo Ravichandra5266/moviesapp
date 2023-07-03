@@ -1,8 +1,8 @@
-In this project let's build a **Spotify Remix App** by applying the concepts we have learned till now. This project allows you to practice the concepts and techniques learned till React Course and apply them in a concrete project.
+In this project let's build a **Movies App** by applying the concepts we have learned till now. This project allows you to practice the concepts and techniques learned till React Course and apply them in a concrete project.
 
 You will demonstrate your skills by creating an app that will fetch data from an internal server using a class component, displaying that data, using **component lifecycle** methods, **routing** concepts, **authentication**, and **authorization**, and adding responsiveness to the website.
 
-This is an individual assessment. All work must be your own. You will also be given feedback by code reviewers after your project submission.
+This is an individual assessment. All work must be your own.
 
 ### Prerequisites
 
@@ -14,23 +14,20 @@ This is an individual assessment. All work must be your own. You will also be gi
 - What is Figma?
   - Figma is a vector graphics editor and prototyping tool which is primarily web-based. You can check more info on the <a href="https://www.figma.com/" target="_blank">Website</a>.
 - Create a Free account in Figma
-  - Kindly follow the instructions as shown in <a href="https://www.youtube.com/watch?v=hrHL2VLMl7g&t=37s" target="_blank">this</a> video to create a Free Figma account.
+  - Kindly follow the instructions as shown in <a href="https://www.youtube.com/watch?v=hrHL2VLMl7g&t=37s" target="_blank">this</a> video to create a Free Figma account. Watch the video upto **00:50**.
 - How to Check CSS in Figma?
-  - Kindly follow the instructions as shown in <a href="https://www.youtube.com/watch?v=B242nuM3y2s" target="_blank">this</a> video to check CSS in the Figma screen.
+  - Kindly follow the instructions as shown in <a href="https://www.youtube.com/watch?v=B242nuM3y2s" target="_blank">this</a> video to check CSS in the Figma screen. Watch the video upto **02:45**.
 - Export Images in Figma screen
+
   - Kindly follow the instructions as shown in <a href="https://www.youtube.com/watch?v=NpzL1MONwaw" target="_blank">this</a> video to export images from the Figma screen.
-  - Check <a href="https://help.trydesignlab.com/hc/en-us/articles/360011010634-How-do-I-export-images-and-PDFs-from-Sketch-or-Figma-in-my-short-course-" target="_blank">this</a> reference docs to export images in Figma screen.
+  - Click on the Export button to get Export options as shown in the below image.
 
-</details>
+  <div style="text-align:center;margin:10px 0px 0px 45px;width:200px;">
+    <img src="https://assets.ccbp.in/frontend/react-js/figma-export-option.png" />
+  </div>
 
-#### API Prerequisites
+- Upload your exported images from Figma to Cloudinary and get image URLs from Cloudinary. Refer <a href="https://learning.ccbp.in/projects/course?c_id=fe4c935d-3ad5-4bb8-a1a5-9b045ae70010&s_id=2f72d6fe-09a7-4c0a-b0db-196740c853a0&t_id=6535e48d-fb4e-45c4-9654-3da423c79e26" target="_blank">this</a> session for better understanding.
 
-<details>
-<summary>Click to view</summary>
-
-- Kindly follow this <a href="https://levelup.gitconnected.com/how-to-build-a-spotify-player-with-react-in-15-minutes-7e01991bc4b6" target="_blank">website</a> for creating a spotify account and register your application.
-
-- Refer to the below image to check your **CLIENT ID** : - <img src="https://assets.ccbp.in/frontend/content/react-js/spotify-remix-client-id-info-v0.png" alt="client id" style="width:400px, height:400px" />
 </details>
 
 #### Design Files
@@ -38,7 +35,7 @@ This is an individual assessment. All work must be your own. You will also be gi
 <details>
 <summary>Click to view</summary>
 
-- You can check the **Design Files** for different devices <a href="https://www.figma.com/file/VHD95fQXFwCmwRNyVKbDhz/Spotify_Remix?node-id=0%3A1" target="_blank">here</a>.
+- You can check the **Design Files** for different devices <a href="https://www.figma.com/file/tPdVlj0p5PESmymNkHYVgk/Movies_App?node-id=0%3A1" target="_blank">here</a>.
 
 </details>
 
@@ -55,45 +52,103 @@ This is an individual assessment. All work must be your own. You will also be gi
 
 <details>
 <summary>Functionality to be added</summary>
-
+<br/>
 The app must have the following functionalities
 
-- Login Route
-  - Users should be able to log in/logout to their account.
-- Users should be able to navigate to Profile/Home/YourMusic/Playlists routes using links in the sidebar.
-- When the data is being fetched then the Loading view should be displayed to the user.
-- Profile Route
-  - Users should be able to see profile photo, name, and followers' details.
-  - Users should be able to see the logout button.
-  - Users should be able to see **PROFILE** highlighted in the sidebar.
-- Home Route
-  - Sidebar should contain the application title with logo, Profile, Home, Your Music, and Playlists button
-  - Users should be able to navigate to the profile route when clicking on the **Spotify Remix** logo.
-  - Users should be able to see a list of Featured Playlists (Ex: Editor Picks) based on the user country and name.
-  - Users should be able to see the list of Categories (Ex: Genres and Moods).
-  - Users should be able to see the list of New Releases based on the user country.
-  - Users should be able to see **HOME** highlighted in the sidebar.
-- Specific Playlist Details Route :
-  - When a user clicks on any playlist in the list of featured playlists then the user should be able to see the list of songs in that playlist.
-  - Users should be able the see the following details(Song Name, Artist Name, Duration of the song)
-  - Users should be able to play the song
-- Specific Category Playlists Details Route :
-  - When a user clicks on any category in the list of categories then the user should be able to see the list of playlists in that category.
-  - Users should be able to see the thumbnail and name of the playlist.
-- Specific Album Details Route :
-  - When a user clicks on any Album in the list of New Releases then the user should be able to see that Album.
-  - Users should be able to see the thumbnail and name of the Album.
-  - Users should be able to see the song in that Album
-  - Users should be able to play the song.
-- Your Music Route
-  - Users should be able to see the list of liked songs.
-  - Users should be able to play the songs.
-  - Users should be able to see Your Music highlighted in the sidebar.
-- Playlists Route
-  - Users should be able to see the list of your playlists (thumbnail, playlist name, number of tracks).
-  - When a user clicks on any playlist in the list of your playlists then the users should be able to see the list of songs in that playlist.
-  - Users should be able to see Playlists highlighted in the sidebar.
-- When the users enter an invalid route in the URL then the Page not found Route should be displayed.
+- **Login Route**
+
+  - When an invalid username and password are provided and the **Login** button is clicked, then the respective error message received from the response should be displayed
+  - When a valid username and password are provided and the **Login** button is clicked, then the page should be navigated to the Home Route
+  - When an _unauthenticated_ user tries to access the Home Route, Popular Route, Search Route, Account Route and Movie Item Details Route, then the page should be navigated to Login Route
+  - When an _authenticated_ user tries to access the Home Route, Popular Route, Search Route, Account Route and Movie Item Details Route, then the page should be navigated to the respective route
+  - When an _authenticated_ user tries to access the Login Route, then the page should be navigated to the Home Route
+
+- **Home Route**
+
+  - When an authenticated user opens the Home Route,
+
+    - An HTTP Get request should be made to **Trending Now Movies API URL**, **Originals API URL** with `jwt_token` in the Cookies
+
+      - **_Loader_** should be displayed while fetching the each data
+      - After the data is successfully fetched from both the API's
+        - A **random** movie title and movie poster with its details should be displayed from the **Originals Response**
+        - Display the list of movies received from the Trending Now Movies Response
+        - Display the list of movies received from the Originals Response
+      - If any of the HTTP GET request made is unsuccessful, then the failure view given in the **Figma** screens should be displayed respectively
+        - When the **Try Again** button is clicked, then the respective HTTP GET request should be made
+
+    - When a **Movie** item is clicked, then the page should be navigated to the Movie Item Details Route
+
+  - **Header**  
+
+    - When the **Movies** logo in the header is clicked, then the page should be navigated to the Home Route
+    - When the **Home** link in the Header is clicked, then the page should be navigated to the Home Route
+    - When the **Popular** link in the header is clicked, then the page should be navigated to the Popular Route
+    - When the **Search** icon in the header is clicked, then the page should be navigated to the Search Route
+    - When the **Profile** logo in the header is clicked, then the page should be navigated to the Account Route
+
+- **Popular Route**
+
+  - When an authenticated user opens the Popular Route
+
+    - An HTTP GET request should be made to **Popular Movies API URL** with `jwt_token` in the Cookies
+
+      - **_Loader_** should be displayed while fetching the data
+      - After the data is fetched successfully, the response received should be displayed
+      - If the HTTP GET request made is unsuccessful, then the failure view given in the **Figma** screens should be displayed
+        - When the **Try Again** button is clicked, an HTTP GET request should be made to **Popular Movies API URL**
+
+    - When a **Movie** item is clicked, then the page should be navigated to the Movie Item Details Route
+    - All the header functionalities mentioned in the Home Route should work in this route accordingly
+
+- **Movie Item details Route**
+
+  - When an authenticated user opens the Movie Item Details Route
+
+    - An HTTP GET request should be made to **Movie Item Details API URL** with `jwt_token` in the Cookies
+
+      - **_Loader_** should be displayed while fetching the data
+      - After the data is fetched successfully,
+        - Movie item details received from the response should be displayed
+        - Display the list of similar movies received from the response
+      - If the HTTP GET request made is unsuccessful, then the failure view given in the **Figma** screens should be displayed
+        - When the **Try Again** button is clicked, an HTTP GET request should be made to **Movie Item Details API URL**
+
+    - All the header functionalities mentioned in the Home Route should work in this route accordingly
+
+
+- **Search Route**
+
+  - When an authenticated user opens the Search Route
+
+    - When a value is provided in the search input and the button with the search icon is clicked
+
+      - Make an HTTP GET request to the **Search Movies API URL**  with `jwt_token` in the Cookies and query parameter `search` with value as the text provided in the search input
+      - **_Loader_** should be displayed while fetching the data
+      - After the data is fetched successfully, display the list of movies received from the response
+      - If the HTTP GET request made is unsuccessful, then the failure view given in the **Figma** screens should be displayed
+        - When the **Try Again** button is clicked, an HTTP GET request should be made to **Search Movies API URL**
+      - When the HTTP GET request made to the **Search Movies API URL** returns an empty list for movies then **Search no results** view should be displayed
+
+    - When a **Movie** item is clicked, then the page should be navigated to the Movie Item Details Route
+    - All the header functionalities mentioned in the Home Route should work in this route accordingly
+
+- **Account Route**
+
+  - When an authenticated user opens the Account Route
+
+    - The username which was provided in the login, should be displayed
+    - The password which was provided in the login, should be displayed in masked
+    - When the **Logout** button is clicked, then the page should be navigated to the Login Route
+
+  - All the header functionalities mentioned in the Home Route should work in this route accordingly
+
+
+- **Not Found Route**
+
+  - When a random path is provided as the URL, then the page should navigate to the Not Found Route
+
+- Users should be able to view the website responsively in mobile view, tablet view as well
 
 </details>
 
@@ -102,40 +157,98 @@ The app must have the following functionalities
 <details>
 <summary>Click to view</summary>
 
-- You can use Moment third party library to format the date
-  - Moment <a href="https://www.npmjs.com/package/moment" target="_blank">Documentation</a>
-- You can use <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank">HTML Audio tags</a> for building the Music Player
-  - You can see this <a href="https://pointclearmedia.com/2020/08/27/css-styling-the-audio-element/" target="_blank">Documentation</a> for stylings
+- Third party packages to be used to achieve the design or functionality
+
+  - React Slick
+
+    - React Slick <a href="https://react-slick.neostack.com/docs/get-started" target="_blank">Documentation</a>
+    - React Slick implementation <a href="https://codesandbox.io/s/react-slick-demo-iz90x?file=/src/components/ReactSlick/index.js" target="_blank">CodeSandbox</a>
+    - Update the CSS accordingly to style the React Slider and arrow buttons, you can check the <a href="https://codesandbox.io/s/react-slick-demo-iz90x?file=/src/components/ReactSlick/index.css" target="_blank">CodeSandbox</a>
+    - Add the below CDN links in your `public > index.html` file for CSS and Font, you can check the <a href="https://codesandbox.io/s/react-slick-demo-iz90x?file=/public/index.html" target="_blank">CodeSandbox</a> for adding below lines
+
+    ```jsx
+    <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+    ```
+
+  - Use date-fns format function to format the date. Refer to the documentation <a href="https://date-fns.org/v2.27.0/docs/format" target="_blank">Link</a> for the usage of format function.
 
 </details>
 
-### Important Note:
+### Important Note
 
 <details>
 <summary>Click to view</summary>
 
-- When you want to showcase your application, you need to give access to users.
-- To give access to users, follow these steps mentioned below
+<br/>
 
-  - Open your app in the dashboard - <a href="https://developer.spotify.com/dashboard/applications" target="_blank">Dashboard Link</a>
+**The following instructions are required for the tests to pass**
 
-  - Click the **USERS AND ACCESS** button
+- **Note:**
 
-  <img src="https://assets.ccbp.in/frontend/content/react-js/spotify-remix-users-and-access-info-v0.png" alt="users and access" style="width:400px, height:400px" />
+  - Don't use any third-party packages other than packages mentioned in the **Quick Tips**
+  - Use media queries for responsiveness. Instead of rendering the same elements twice for responsiveness.
+  - For Mini Projects, You have to use normal HTML elements to style the React Components. Usage of `styled-components` (CSS in JS) to style React components are not supported in Mini Projects. Test cases won't be passed, If you use styled components.
+  - Refer to the below Example for the usage of `testid` in the HTML elements.
 
-  - In the **USERS AND ACCESS** page, click the **ADD NEW USER** button to add a user to your application.
+    - Example: `<div testid="movieItem" className="movie-item"/>`.
 
-  <img src="https://assets.ccbp.in/frontend/content/react-js/spotify-remix-add-new-user-info-v0.png" alt="add new user" style="width:400px, height:400px" />
+- **Routes**
 
-  - After clicking the **ADD NEW USER** button, a pop-up will be opened. In that pop-up, give the user details like name and email. Make sure you are providing the appropriate email.
+  - Render `Login` Route component when the path in URL matches `/login`
+  - Render `Home` Route component when the path in URL matches `/`
+  - Render `Popular` Route component when the path in URL matches `/popular`
+  - Render `Movie Item Details` Route component when the path in URL matches `/movies/:id`
+  - Render `Search` Route component when the path in URL matches `/search`
+  - Render `Account` Route component when the path in URL matches `/account`
 
-  <img src="https://assets.ccbp.in/frontend/content/react-js/spotify-remix-add-new-user-pop-up-info.png" alt="pop up new user" style="width:400px, height:400px" />
+- Wrap the `Loader` component with an HTML container element and add the `testid` attribute value as **loader** to it
 
-  - Fill the details and save them, the user details will appear in the **USERS AND ACCESS** You can add a maximum of 25 users in development mode.
+  ```jsx
+  <div className="loader-container" testid="loader">
+    <Loader type="TailSpin" color="#D81F26" height={50} width={50} />
+  </div>
+  ```
 
-  <img src="https://assets.ccbp.in/frontend/content/react-js/spotify-remix-user-details-info.png" alt="user details" style="width:400px, height:400px" />
+- **Login Route**
 
-- Before deploying your project, change the redirect URL accordingly in `getRedirectURL` function from the path `src/components/LoginForm/index.js` which return when the condition is false
+  - The Movies App Logo image should consist of alt attribute value as `login website logo`
+  - The Cookies should be set by using the key name `jwt_token`
+
+- **Home Route**
+
+  - The movie images in the Home Route should have the alt attribute as the value of the key `title` from each object in Trending Now Movies Response, Originals Response
+
+- **Movie Item Details Route**
+
+  - The movie images in the Movie Item Details Route should have the alt as the value of the key `title` from each object in similarMoviesResponse
+  - The `runtime` key value received from the movie Item Details response, should be converted from minutes to hours and minutes and displayed in Movie Item Details Route
+  - The censor rating of the movie in the Movie Item Details Route should be displayed as **A** if the `adult` key value received from the movie Item Details response is true. Otherwise, it should be displayed as U/A
+
+- **Search Route**
+
+  - When the search results return an empty list, then the No Movies image should consist of alt attribute value as `no movies`
+  - When the search results return an empty list, then the text content as `Your search for {searchValue} did not find any matches.` should be displayed where searchValue is the value provided in Search Input
+  - The HTML button element with search icon in the header should have the `testid` attribute value as **searchButton** to it
+
+- **Not Found Route**
+
+  - The Not Found image should consist of alt attribute value as `not found`
+
+- **Header**
+
+  - The Movies App Logo image in Header should consist of alt attribute value as `website logo`
+  - The Profile image in the Header should consist of alt attribute value as `profile`
+  - The Failure View image should consist of alt attribute value as `failure view`
+  - `HiOutlineSearch` icon from react-icons should be used for the **Search Icon** button in Header
+  - The HTML button element with search icon in the header should have the `testid` attribute value as **searchButton** to it
+
+- **Footer**
+
+  - `FaGoogle` icon from react-icons should be used for the **Google Icon** button in Footer
+  - `FaTwitter` icon from react-icons should be used for the **Twitter Icon** button in Footer
+  - `FaInstagram` icon from react-icons should be used for the **Instagram Icon** button in Footer
+  - `FaYoutube` icon from react-icons should be used for the **Youtube Icon** button in Footer
 
 </details>
 
@@ -144,949 +257,342 @@ The app must have the following functionalities
 <details>
 <summary>Data fetch URLs</summary>
 
-- Login Route:
-
-  - **Note:** Already code has been Pre-filled, Kindly check the code in Login Form Component
-
-    - You should use your Application clientID in place of **clientId** (Follow<a href="https://levelup.gitconnected.com/how-to-build-a-spotify-player-with-react-in-15-minutes-7e01991bc4b6" target="_blank">website</a> to create your own application clientID).
-    - You can get the Redirect URL using `getRedirectURL` function. The `redirectUrl` value should be saved in the application's Redirect URIs (Follow this <a href="https://levelup.gitconnected.com/how-to-build-a-spotify-player-with-react-in-15-minutes-7e01991bc4b6" target="_blank">website</a> to save `redirectUrl` value in the application's Redirect URIs).
-    - Add the URL which was given as a value for the variable `redirectUrl` to your Application Redirect URIs(Follow API Prerequisites to add Redirect URIs) to redirect after authentication success OR failure
-    - When you click on the `LOG IN WITH SPOTIFY` button
-      - If you didn’t log in to your Spotify account
-        - It will take you to the Spotify login app to log in.
-        - It will ask your credentials to log in
-        - Once your login process is done it will redirect to the Terms page, and you need to click on the `Agree` button to get the access token.
-      - If you’re already login to your Spotify account
-        - It will directly redirect to the Terms page, and you need to click on the `Agree` button to get the access token.
-
-  - Get Request Token:
-
-    ```js
-    'https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&redirect_uri=${redirectUrl}&scope=user-read-private%20user-read-email%20playlist-read-private%20playlist-modify-public%20playlist-modify-private%20user-library-read%20user-library-modify%20user-follow-read%20user-follow-modify&state=34fFs29kd09&show_dialog=true'
-
-    ```
-
-    - Sample response object:
-
-      ```json
-      {
-        "access_token": "BQBeseFFzfwpW_YaB8QrmT8vaYOb2Ka_uvgf8Q62jIasqo2Bna_bgyliY7N2I4sDB-e4oOv-ECUOfSg6aW_QBTCxTTsRMcCUbT3uHY79xCAFLkNakSXhb6kSS6HYzgXH3hSl9uKwXXHtR0IDvHpxLvcJxgTI1jFN7v-3_2B-O2KtntnagT2MgtrW-TGM3IWu-bczZdrqlZ3VmpyiOx81PKuDfNACR3zPVrjJ8po7jU55WcUF8j0_nWQQ6LShAWpoYzFq_OGQfTDBIwGEqg",
-        "expires_in": "3600",
-        "state": "34fFs29kd09",
-        "token_type": "Bearer"
-      }
-      ```
-
-- Profile Route:
-
-  - **Note:** Get Access token from Cookies
-
-    ```js
-    "const token = Cookies.get('pa_token')"
-
-    ```
-
-  - Get User Information:
-
-    ```js
-    'https://api.spotify.com/v1/me'
-
-    ```
-
-  - Sample response object:
-
-    ```json
-    {
-      "country": "IN",
-      "display_name": "Bobby",
-      "email": "padalavijayreddy@gmail.com",
-      "explicit_content": {
-        "filter_enabled": false,
-        "filter_locked": false
-      },
-      "external_urls": {
-        "spotify": "https://open.spotify.com/user/tel1grq8ely359wesuv83nezp"
-      },
-      "followers": {
-        "href": null,
-        "total": 0
-      },
-      "href": "https://api.spotify.com/v1/users/tel1grq8ely359wesuv83nezp",
-      "id": "tel1grq8ely359wesuv83nezp",
-      "images": [],
-      "product": "open",
-      "type": "user",
-      "uri": "spotify:user:tel1grq8ely359wesuv83nezp"
-    }
-    ```
-
-- Home Route:
-
-  - **Note:**
-
-    - Get Access token from Cookies
-    - Get Country name and Time Stamp from Get User Information API
-
-  - Format the Timestamp using a library called <a href="https://www.npmjs.com/package/moment" target="_blank">moment js</a>
-
-    ```js
-    "const timeStamp=moment(new Date()).format('YYYY-MM-DDTHH:00:00')"
-
-    ```
-
-  - Get Featured Playlists (Editors Pick):
-
-    ```js
-    'https://api.spotify.com/v1/browse/featured-playlists?country=${country}&timestamp=${timestamp}'
-
-    ```
-
-    - Sample response object:
-
-    ```json
-    {
-        "message" : "Editor's picks",
-        "playlists" : {
-            "href" : "https://api.spotify.com/v1/browse/featured-playlists?country=IN&timestamp=2021-07-03T11%3A00%3A00&offset=0&limit=20",
-            "items" : [
-                {
-                    "collaborative" : false,
-                    "description" : "Hottest Bollywood R&B tunes!",
-                    "external_urls" : {
-                        "spotify" : "https://open.spotify.com/playlist/37i9dQZF1DXdSavJjIP6Fb"
-                    },
-                    "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1DXdSavJjIP6Fb",
-                    "id" : "37i9dQZF1DXdSavJjIP6Fb",
-                    "images" : [ {
-                        "height" : null,
-                        "url" : "https://i.scdn.co/image/ab67706f000000036caf8c414e0b49f1b5be3e91",
-                        "width" : null
-                    } ],
-                    "name" : "Bollywood R&B",
-                    "owner" : {
-                        "display_name" : "Spotify",
-                        "external_urls" : {
-                        "spotify" : "https://open.spotify.com/user/spotify"
-                        },
-                        "href" : "https://api.spotify.com/v1/users/spotify",
-                        "id" : "spotify",
-                        "type" : "user",
-                        "uri" : "spotify:user:spotify"
-                    },
-                    "primary_color" : null,
-                    "public" : null,
-                    "snapshot_id" : "MTYyMzgyNjY1NCwwMDAwMDAxMDAwMDAwMTdhMTM5YzY0NzAwMDAwMDE3MTM0MmFmMTgz",
-                    "tracks" : {
-                        "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1DXdSavJjIP6Fb/tracks",
-                        "total" : 30
-                    },
-                    "type" : "playlist",
-                    "uri" : "spotify:playlist:37i9dQZF1DXdSavJjIP6Fb"
-                },
-                ....
-            ],
-            "limit" : 20,
-            "next" : null,
-            "offset" : 0,
-            "previous" : null,
-            "total" : 15
-        }
-    }
-    ```
-
-  - Get Browse Categories (Genres & Moods):
+- **Note:** Use the below sample code snippet to make a POST request on Login using valid username and password.
 
   ```js
-  'https://api.spotify.com/v1/browse/categories'
-
-  ```
-
-  - Sample response object:
-
-  ```json
-  {
-      "categories" : {
-          "href" : "https://api.spotify.com/v1/browse/categories?offset=0&limit=20",
-          "items" : [
-              {
-                  "href" : "https://api.spotify.com/v1/browse/categories/toplists",
-                  "icons" : [ {
-                      "height" : 275,
-                      "url" : "https://t.scdn.co/media/derived/toplists_11160599e6a04ac5d6f2757f5511778f_0_0_275_275.jpg",
-                      "width" : 275
-                  } ],
-                  "id" : "toplists",
-                  "name" : "Top Lists"
-              },
-              ....
-          ],
-          "limit" : 20,
-          "next" : "https://api.spotify.com/v1/browse/categories?offset=20&limit=20",
-          "offset" : 0,
-          "previous" : null,
-          "total" : 58
-      }
+  const options = {
+    method: 'POST',
+    body: JSON.stringify(userDetails),
   }
   ```
 
-  - Get New Releases:
+**Login API**
 
-    - **Note:** Get User Country Code from getting User Information API
+#### API: `https://apis.ccbp.in/login`
 
-  ```js
-  'https://api.spotify.com/v1/browse/new-releases?country=${getUserCountry}'
+#### Method: `POST`
 
-  ```
+#### Description:
 
-  - Sample response object:
+Returns a response based on the credentials provided
 
-  ```json
+#### Sample request object:
+
+```json
+{
+  "username": "rahul",
+  "password": "rahul@2021"
+}
+```
+
+#### Sample Success Response
+
+```json
+{
+  "jwt_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsIiwicm9sZSI6IlBSSU1FX1VTRVIiLCJpYXQiOjE2MTk2Mjg2MTN9. nZDlFsnSWArLKKeF0QbmdVfLgzUbx1BGJsqa2kc_21Y"
+}
+```
+
+#### Sample Failure Response
+
+```json
+{
+  "status_code": 404,
+  "error_msg": "Username is not found"
+}
+```
+
+**Trending Now Movies API**
+
+#### API: `https://apis.ccbp.in/movies-app/trending-movies`
+
+#### Method: `GET`
+
+#### Description:
+
+Returns a response containing the list of all movies
+
+#### Sample Response
+
+```json
+{
+  "results": [
+    {
+      "backdrop_path": "https://assets.ccbp.in/frontend/react-js/movies-app/no-time-to-die-movie-background-v0.png",
+      "id": "92c2cde7-d740-443d-8929-010b46cb0305",
+      "overview": "Bond has left active service and is enjoying a tranquil life in Jamaica. His peace is short-lived when his old friend Felix Leiter from the CIA turns up asking for help. The mission to rescue a kidnapped scientist turns out to be far more treacherous than expected, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.",
+      "poster_path": "https://assets.ccbp.in/frontend/react-js/movies-app/no-time-to-die-movie-poster.png",
+      "title": "No Time to Die"
+    },
+    ...
+  ],
+  "total": 10
+}
+```
+
+**Top Rated Movies API**
+
+#### API: `https://apis.ccbp.in/movies-app/top-rated-movies`
+
+#### Method: `GET`
+
+#### Description:
+
+Returns a response containing the list of all movies
+
+#### Sample Response
+
+```json
+{
+  "results": [
+    {
+      "backdrop_path": "https://assets.ccbp.in/frontend/react-js/movies-app/ghostbusters-afterlife-british-movie-background-v0.png",
+      "id": "ef6b65e0-3fbf-4ad7-ae0e-25a478648e69",
+      "overview": "Ghostbusters: Afterlife is a 2021 American supernatural comedy film directed by Jason Reitman, who co-wrote the screenplay with Gil Kenan.",
+      "poster_path": "https://assets.ccbp.in/frontend/react-js/movies-app/ghostbusters-afterlife-british-movie-poster.png",
+      "title": "Ghostbusters: Afterlife"
+    },
+    ...
+  ],
+  "total": 10
+}
+```
+
+**Originals API**
+
+#### API: `https://apis.ccbp.in/movies-app/originals`
+
+#### Method: `GET`
+
+#### Description:
+
+Returns a response containing the list of all movies
+
+#### Sample Response
+
+```json
+{
+  "results": [
+    {
+      "backdrop_path": "https://assets.ccbp.in/frontend/react-js/movies-app/grindhouse-movie-background-v0.png",
+      "id": "efb33428-5527-44d0-a713-1aeef4d56968",
+      "overview": "Austin's hottest DJ, Jungle Julia, sets out into the night to unwind with her two friends Shanna and Arlene. Covertly tracking their moves is Stuntman Mike, a scarred rebel leering from behind the wheel of his muscle car, revving just feet away.",
+      "poster_path": "https://assets.ccbp.in/frontend/react-js/movies-app/grindhouse-movie-poster.png",
+      "title": "Death Proof"
+    },
+    ...
+  ],
+  "total": 10
+}
+```
+
+**Popular Movies API**
+
+#### API: `https://apis.ccbp.in/movies-app/popular-movies`
+
+#### Method: `GET`
+
+#### Description:
+
+Returns a response containing the list of all movies
+
+#### Sample Response
+
+```json
+{
+  "results": [
+    {
+      "backdrop_path": "https://assets.ccbp.in/frontend/react-js/movies-app/venom-movie-background-v0.png",
+      "id": "320dee56-fdb2-40cf-8df8-92b251bd781f",
+      "overview": "Investigative journalist Eddie Brock attempts a comeback following a scandal, but accidentally becomes the host of Venom, a violent, super powerful alien symbiote.",
+      "poster_path": "https://assets.ccbp.in/frontend/react-js/movies-app/venom-movie-poster.png",
+      "title": "Venom"
+    },
+    ...
+  ],
+  "total": 10
+}
+```
+
+**Movie Item Details API**
+
+#### API: `https://apis.ccbp.in/movies-app/movies/{movieId}`
+
+#### Example: `https://apis.ccbp.in/movies-app/movies/92c2cde7-d740-443d-8929-010b46cb0305`
+
+#### Method: `GET`
+
+#### Description:
+
+Returns a response containing the details of the movie
+
+#### Sample Response
+
+```json
+{
+  "movie_details": {
+    "adult": false,
+    "backdrop_path": "https://assets.ccbp.in/frontend/react-js/movies-app/venom-let-there-be-carnage-movie-background-v0.png",
+    "budget": "11 Crores",
+    "genres": [
       {
-          "albums" : {
-              "href" : "https://api.spotify.com/v1/browse/new-releases?country=IN&offset=0&limit=20",
-              "items" : [
-                  {
-                      "album_type" : "single",
-                      "artists" : [ {
-                          "external_urls" : {
-                          "spotify" : "https://open.spotify.com/artist/7gXy60xRcwYujBFoYHnR2O"
-                          },
-                          "href" : "https://api.spotify.com/v1/artists/7gXy60xRcwYujBFoYHnR2O",
-                          "id" : "7gXy60xRcwYujBFoYHnR2O",
-                          "name" : "Big Red Machine",
-                          "type" : "artist",
-                          "uri" : "spotify:artist:7gXy60xRcwYujBFoYHnR2O"
-                      }, {
-                          "external_urls" : {
-                          "spotify" : "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
-                          },
-                          "href" : "https://api.spotify.com/v1/artists/06HL4z0CvFAxyc27GXpf02",
-                          "id" : "06HL4z0CvFAxyc27GXpf02",
-                          "name" : "Taylor Swift",
-                          "type" : "artist",
-                          "uri" : "spotify:artist:06HL4z0CvFAxyc27GXpf02"
-                      } ],
-                      "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RU", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
-                      "external_urls" : {
-                          "spotify" : "https://open.spotify.com/album/4kD0pFwhEjEiF9pwUwkpNo"
-                      },
-                      "href" : "https://api.spotify.com/v1/albums/4kD0pFwhEjEiF9pwUwkpNo",
-                      "id" : "4kD0pFwhEjEiF9pwUwkpNo",
-                      "images" : [ {
-                          "height" : 640,
-                          "url" : "https://i.scdn.co/image/ab67616d0000b273b8abc4de41be8b3158a4ef40",
-                          "width" : 640
-                      }, {
-                          "height" : 300,
-                          "url" : "https://i.scdn.co/image/ab67616d00001e02b8abc4de41be8b3158a4ef40",
-                          "width" : 300
-                      }, {
-                          "height" : 64,
-                          "url" : "https://i.scdn.co/image/ab67616d00004851b8abc4de41be8b3158a4ef40",
-                          "width" : 64
-                      } ],
-                      "name" : "Renegade (feat. Taylor Swift)",
-                      "release_date" : "2021-07-02",
-                      "release_date_precision" : "day",
-                      "total_tracks" : 3,
-                      "type" : "album",
-                      "uri" : "spotify:album:4kD0pFwhEjEiF9pwUwkpNo"
-                  },
-                  ....
-              ],
-              "limit" : 20,
-              "next" : "https://api.spotify.com/v1/browse/new-releases?country=IN&offset=20&limit=20",
-              "offset" : 0,
-              "previous" : null,
-              "total" : 100
+        "id": "af2384dc-494b-48a7-a94d-91e6b279f20b",
+        "name": "Science Fiction"
+      },
+      {
+        "id": "16106068-2d4e-438f-8a9a-fa0b91e4246a",
+        "name": "Action"
+      },
+      {
+        "id": "0c29016b-ff7f-4d67-8f95-f8681bc7ff1c",
+        "name": "Adventure"
       }
-  ```
-
-- Specific Playlist Details Route :
-
-  - **Note:** The value of the API id should be the `id` value of each playlist
-
-    ```js
-    'https://api.spotify.com/v1/users/spotify/playlists/${id}'
-
-    ```
-
-    - Sample response object:
-
-    ```json
-    {
-        "collaborative" : false,
-        "description": "From India to MENA, these hits will make you dance.",
-        "external_urls" : {
-            "spotify" : "https://open.spotify.com/playlist/37i9dQZF1DX7cLxqtNO3zl"
-        },
-        "followers" : {
-            "href" : null,
-            "total" : 47628
-        },
-        "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1DX7cLxqtNO3zl",
-        "id" : "37i9dQZF1DX7cLxqtNO3zl",
-        "images" : [ {
-            "height" : null,
-            "url" : "https://i.scdn.co/image/ab67706f0000000384696e0bd9318a598cc9373d",
-            "width" : null
-        } ],
-        "name" : "Bollywood Araby",
-        "owner" : {
-            "display_name" : "Spotify",
-            "external_urls" : {
-            "spotify" : "https://open.spotify.com/user/spotify"
-            },
-            "href" : "https://api.spotify.com/v1/users/spotify",
-            "id" : "spotify",
-            "type" : "user",
-            "uri" : "spotify:user:spotify"
-        },
-        "primary_color" : "#ffffff",
-        "public" : false,
-        "snapshot_id" : "MTYyNTI5NDQ3MiwwMDAwMDAwMGJiYzUwMjlhMGNjZWVlYTgxYTUyY2I0MTc1MjBjMmUy",
-        "tracks" : {
-            "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1DX7cLxqtNO3zl/tracks?offset=0&limit=100",
-            "items" : [
-                {
-                    "added_at" : "2021-06-03T19:23:39Z",
-                    "added_by" : {
-                        "external_urls" : {
-                        "spotify" : "https://open.spotify.com/user/"
-                        },
-                        "href" : "https://api.spotify.com/v1/users/",
-                        "id" : "",
-                        "type" : "user",
-                        "uri" : "spotify:user:"
-                    },
-                    "is_local" : false,
-                    "primary_color" : null,
-                    "track" : {
-                        "album" : {
-                        "album_type" : "single",
-                        "artists" : [ {
-                            "external_urls" : {
-                            "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
-                            },
-                            "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
-                            "id" : "0LyfQWJT6nXafLPZqxe9Of",
-                            "name" : "Various Artists",
-                            "type" : "artist",
-                            "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
-                        } ],
-                        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RU", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
-                        "external_urls" : {
-                            "spotify" : "https://open.spotify.com/album/7IfUPFe5MSwcAp2Vw8ohF5"
-                        },
-                        "href" : "https://api.spotify.com/v1/albums/7IfUPFe5MSwcAp2Vw8ohF5",
-                        "id" : "7IfUPFe5MSwcAp2Vw8ohF5",
-                        "images" : [ {
-                            "height" : 640,
-                            "url" : "https://i.scdn.co/image/ab67616d0000b273bd04f8c4ddaa8586e3f1505d",
-                            "width" : 640
-                        }, {
-                            "height" : 300,
-                            "url" : "https://i.scdn.co/image/ab67616d00001e02bd04f8c4ddaa8586e3f1505d",
-                            "width" : 300
-                        }, {
-                            "height" : 64,
-                            "url" : "https://i.scdn.co/image/ab67616d00004851bd04f8c4ddaa8586e3f1505d",
-                            "width" : 64
-                        } ],
-                        "name" : "BurjKhalifa (From \"Laxmii\")",
-                        "release_date" : "2020-10-18",
-                        "release_date_precision" : "day",
-                        "total_tracks" : 1,
-                        "type" : "album",
-                        "uri" : "spotify:album:7IfUPFe5MSwcAp2Vw8ohF5"
-                        },
-                        "artists" : [ {
-                        "external_urls" : {
-                            "spotify" : "https://open.spotify.com/artist/5EXIQQjCaCnRPJ68SxYURB"
-                        },
-                        "href" : "https://api.spotify.com/v1/artists/5EXIQQjCaCnRPJ68SxYURB",
-                        "id" : "5EXIQQjCaCnRPJ68SxYURB",
-                        "name" : "Shashi",
-                        "type" : "artist",
-                        "uri" : "spotify:artist:5EXIQQjCaCnRPJ68SxYURB"
-                        }, {
-                        "external_urls" : {
-                            "spotify" : "https://open.spotify.com/artist/6xElGyunMSlnuJ2vabDUWA"
-                        },
-                        "href" : "https://api.spotify.com/v1/artists/6xElGyunMSlnuJ2vabDUWA",
-                        "id" : "6xElGyunMSlnuJ2vabDUWA",
-                        "name" : "DJ Khushi",
-                        "type" : "artist",
-                        "uri" : "spotify:artist:6xElGyunMSlnuJ2vabDUWA"
-                        }, {
-                        "external_urls" : {
-                            "spotify" : "https://open.spotify.com/artist/3tPQOjkxO3mrYrrgkTeXgH"
-                        },
-                        "href" : "https://api.spotify.com/v1/artists/3tPQOjkxO3mrYrrgkTeXgH",
-                        "id" : "3tPQOjkxO3mrYrrgkTeXgH",
-                        "name" : "Nikhita Gandhi",
-                        "type" : "artist",
-                        "uri" : "spotify:artist:3tPQOjkxO3mrYrrgkTeXgH"
-                        }, {
-                        "external_urls" : {
-                            "spotify" : "https://open.spotify.com/artist/4x4Q6d60hC0ZuLloMeCLoS"
-                        },
-                        "href" : "https://api.spotify.com/v1/artists/4x4Q6d60hC0ZuLloMeCLoS",
-                        "id" : "4x4Q6d60hC0ZuLloMeCLoS",
-                        "name" : "Madhubanti",
-                        "type" : "artist",
-                        "uri" : "spotify:artist:4x4Q6d60hC0ZuLloMeCLoS"
-                        } ],
-                        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RU", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
-                        "disc_number" : 1,
-                        "duration_ms" : 187570,
-                        "episode" : false,
-                        "explicit" : false,
-                        "external_ids" : {
-                        "isrc" : "INZ031408360"
-                        },
-                        "external_urls" : {
-                        "spotify" : "https://open.spotify.com/track/3ZVKI8jix6PjEFx2xFBFhz"
-                        },
-                        "href" : "https://api.spotify.com/v1/tracks/3ZVKI8jix6PjEFx2xFBFhz",
-                        "id" : "3ZVKI8jix6PjEFx2xFBFhz",
-                        "is_local" : false,
-                        "name" : "BurjKhalifa (From \"Laxmii\")",
-                        "popularity" : 67,
-                        "preview_url" : "https://p.scdn.co/mp3-preview/db40ab496ac6cbfdc8b87e8ecf2032b18073b1e5?cid=f25d283eae8046588034aee0a42c0f31",
-                        "track" : true,
-                        "track_number" : 1,
-                        "type" : "track",
-                        "uri" : "spotify:track:3ZVKI8jix6PjEFx2xFBFhz"
-                    },
-                    "video_thumbnail" : {
-                        "url" : null
-                    }
-                },
-                ....
-            ],
-            "limit" : 100,
-            "next" : null,
-            "offset" : 0,
-            "previous" : null,
-            "total" : 50
-            },
-        "type" : "playlist",
-        "uri" : "spotify:playlist:37i9dQZF1DX7cLxqtNO3zl"
-    }
-    ```
-
-    - You can get the song url from the key `preview_url`. this key value is present inside items object that is received as a part of the response for the Specific Playlist API
-
-    - For example in above response
-
-    ```json
-        {
-        ....
-        "tracks" : {
-            ....
-            "items" : [
-                {
-                    ....
-                    "track" : {
-                        ....
-                        "preview_url" : "https://p.scdn.co/mp3-preview/db40ab496ac6cbfdc8b87e8ecf2032b18073b1e5?cid=f25d283eae8046588034aee0a42c0f31",
-                        ....
-                    },
-                    ....
-                },
-                ....
-            ],
-            ....
-            },
-            ....
-    }
-    ```
-
-- Specific Category Playlists Details Route :
-
-  - **Note:**
-
-    - The value of the category id should be given in the place of `id`
-
-  - Get User Country Code from Get UserInfo API
-
-    ```js
-    'https://api.spotify.com/v1/browse/categories/${id}/playlists?country=${getUserCountry}'
-
-    ```
-
-    - Sample response object:
-
-    ```json
-    {
-        "playlists" : {
-            "href" : "https://api.spotify.com/v1/browse/categories/toplists/playlists?country=IN&offset=0&limit=20",
-            "items" : [
-                {
-                    "collaborative" : false,
-                    "description": "Doja Cat & The Weeknd are on top of the Hottest 50!",
-                    "external_urls" : {
-                        "spotify" : "https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M"
-                    },
-                    "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1DXcBWIGoYBM5M",
-                    "id" : "37i9dQZF1DXcBWIGoYBM5M",
-                    "images" : [ {
-                        "height" : null,
-                        "url" : "https://i.scdn.co/image/ab67706f0000000324cee63f23e9ec905dbcb3b0",
-                        "width" : null
-                    } ],
-                    "name" : "Today's Top Hits",
-                    "owner" : {
-                        "display_name" : "Spotify",
-                        "external_urls" : {
-                        "spotify" : "https://open.spotify.com/user/spotify"
-                        },
-                        "href" : "https://api.spotify.com/v1/users/spotify",
-                        "id" : "spotify",
-                        "type" : "user",
-                        "uri" : "spotify:user:spotify"
-                    },
-                    "primary_color" : null,
-                    "public" : null,
-                    "snapshot_id" : "MTYyNTE5ODQwMCwwMDAwMDRjMTAwMDAwMTdhNjU1ZjkyY2YwMDAwMDE3YTY0OWRhYmYw",
-                    "tracks" : {
-                        "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1DXcBWIGoYBM5M/tracks",
-                        "total" : 50
-                    },
-                    "type" : "playlist",
-                    "uri" : "spotify:playlist:37i9dQZF1DXcBWIGoYBM5M"
-                },
-                ....
-            ],
-            "limit" : 20,
-            "next" : null,
-            "offset" : 0,
-            "previous" : null,
-            "total" : 13
-        }
-    }
-    ```
-
-- Specific Album Details Route :
-
-  - **Note:** The value of the album id should be given in the place of `id`
-
-    ```js
-    'https://api.spotify.com/v1/albums/${id}'
-
-    ```
-
-    - Sample response object:
-
-    ```json
-    {
-        "album_type" : "single",
-        "artists" : [
-            {
-                "external_urls" : {
-                "spotify" : "https://open.spotify.com/artist/7gXy60xRcwYujBFoYHnR2O"
-                },
-                "href" : "https://api.spotify.com/v1/artists/7gXy60xRcwYujBFoYHnR2O",
-                "id" : "7gXy60xRcwYujBFoYHnR2O",
-                "name" : "Big Red Machine",
-                "type" : "artist",
-                "uri" : "spotify:artist:7gXy60xRcwYujBFoYHnR2O"
-            },
-            ....
-        ],
-        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RU", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
-        "copyrights" : [ {
-            "text" : "2021 Jagjaguwar / 37d03d",
-            "type" : "C"
-        }, {
-            "text" : "2021 Jagjaguwar / 37d03d",
-            "type" : "P"
-        } ],
-        "external_ids" : {
-            "upc" : "617308011296"
-        },
-        "external_urls" : {
-            "spotify" : "https://open.spotify.com/album/4kD0pFwhEjEiF9pwUwkpNo"
-        },
-        "genres" : [ ],
-        "href" : "https://api.spotify.com/v1/albums/4kD0pFwhEjEiF9pwUwkpNo",
-        "id" : "4kD0pFwhEjEiF9pwUwkpNo",
-        "images" : [ {
-            "height" : 640,
-            "url" : "https://i.scdn.co/image/ab67616d0000b273b8abc4de41be8b3158a4ef40",
-            "width" : 640
-        }, {
-            "height" : 300,
-            "url" : "https://i.scdn.co/image/ab67616d00001e02b8abc4de41be8b3158a4ef40",
-            "width" : 300
-        }, {
-            "height" : 64,
-            "url" : "https://i.scdn.co/image/ab67616d00004851b8abc4de41be8b3158a4ef40",
-            "width" : 64
-        } ],
-        "label" : "Jagjaguwar",
-        "name" : "Renegade (feat. Taylor Swift)",
-        "popularity" : 0,
-        "release_date" : "2021-07-02",
-        "release_date_precision" : "day",
-        "total_tracks" : 3,
-        "tracks" : {
-            "href" : "https://api.spotify.com/v1/albums/4kD0pFwhEjEiF9pwUwkpNo/tracks?offset=0&limit=50",
-            "items" : [
-                {
-                    "artists" : [ {
-                        "external_urls" : {
-                        "spotify" : "https://open.spotify.com/artist/7gXy60xRcwYujBFoYHnR2O"
-                        },
-                        "href" : "https://api.spotify.com/v1/artists/7gXy60xRcwYujBFoYHnR2O",
-                        "id" : "7gXy60xRcwYujBFoYHnR2O",
-                        "name" : "Big Red Machine",
-                        "type" : "artist",
-                        "uri" : "spotify:artist:7gXy60xRcwYujBFoYHnR2O"
-                    }, {
-                        "external_urls" : {
-                        "spotify" : "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
-                        },
-                        "href" : "https://api.spotify.com/v1/artists/06HL4z0CvFAxyc27GXpf02",
-                        "id" : "06HL4z0CvFAxyc27GXpf02",
-                        "name" : "Taylor Swift",
-                        "type" : "artist",
-                        "uri" : "spotify:artist:06HL4z0CvFAxyc27GXpf02"
-                    } ],
-                    "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RU", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
-                    "disc_number" : 1,
-                    "duration_ms" : 254466,
-                    "explicit" : false,
-                    "external_urls" : {
-                        "spotify" : "https://open.spotify.com/track/1aU1wpYBSpP0M6IiihY5Ue"
-                    },
-                    "href" : "https://api.spotify.com/v1/tracks/1aU1wpYBSpP0M6IiihY5Ue",
-                    "id" : "1aU1wpYBSpP0M6IiihY5Ue",
-                    "is_local" : false,
-                    "name" : "Renegade (feat. Taylor Swift)",
-                    "preview_url" : "https://p.scdn.co/mp3-preview/e3b1851865f3ee5f213dfd8d950e344e6b14ec8c?cid=f25d283eae8046588034aee0a42c0f31",
-                    "track_number" : 1,
-                    "type" : "track",
-                    "uri" : "spotify:track:1aU1wpYBSpP0M6IiihY5Ue"
-                },
-                ....
-            ],
-            "limit" : 50,
-            "next" : null,
-            "offset" : 0,
-            "previous" : null,
-            "total" : 3
-        },
-        "type" : "album",
-        "uri" : "spotify:album:4kD0pFwhEjEiF9pwUwkpNo"
-    }
-    ```
-
-- Your Music Route :
-
-  - **Note:** In this API you will get your liked songs as response, you should like a few songs in your account to see the list of liked songs, you can access the list of liked songs from the response using the key `items`.
-
-  ```js
-  'https://api.spotify.com/v1/me/tracks'
-
-  ```
-
-  - Sample response object:
-
-  ```json
-  {
-      "href" : "https://api.spotify.com/v1/me/tracks?offset=0&limit=20",
-      "items" : [
-          {
-              "added_at" : "2021-07-02T09:42:53Z",
-              "track" : {
-              "album" : {
-                  "album_type" : "single",
-                  "artists" : [ {
-                  "external_urls" : {
-                      "spotify" : "https://open.spotify.com/artist/4A2XSc4OJjuPY4l6NjnrDj"
-                  },
-                  "href" : "https://api.spotify.com/v1/artists/4A2XSc4OJjuPY4l6NjnrDj",
-                  "id" : "4A2XSc4OJjuPY4l6NjnrDj",
-                  "name" : "Ram Miriyala",
-                  "type" : "artist",
-                  "uri" : "spotify:artist:4A2XSc4OJjuPY4l6NjnrDj"
-                  } ],
-                  "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RU", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
-                  "external_urls" : {
-                  "spotify" : "https://open.spotify.com/album/16FbjE4zTKmqoa9DOt4lrs"
-                  },
-                  "href" : "https://api.spotify.com/v1/albums/16FbjE4zTKmqoa9DOt4lrs",
-                  "id" : "16FbjE4zTKmqoa9DOt4lrs",
-                  "images" : [ {
-                  "height" : 640,
-                  "url" : "https://i.scdn.co/image/ab67616d0000b27322f35b0b1851208dd08f4a78",
-                  "width" : 640
-                  }, {
-                  "height" : 300,
-                  "url" : "https://i.scdn.co/image/ab67616d00001e0222f35b0b1851208dd08f4a78",
-                  "width" : 300
-                  }, {
-                  "height" : 64,
-                  "url" : "https://i.scdn.co/image/ab67616d0000485122f35b0b1851208dd08f4a78",
-                  "width" : 64
-                  } ],
-                  "name" : "Gully Rowdy",
-                  "release_date" : "2021-05-07",
-                  "release_date_precision" : "day",
-                  "total_tracks" : 1,
-                  "type" : "album",
-                  "uri" : "spotify:album:16FbjE4zTKmqoa9DOt4lrs"
-              },
-              "artists" : [ {
-                  "external_urls" : {
-                  "spotify" : "https://open.spotify.com/artist/4A2XSc4OJjuPY4l6NjnrDj"
-                  },
-                  "href" : "https://api.spotify.com/v1/artists/4A2XSc4OJjuPY4l6NjnrDj",
-                  "id" : "4A2XSc4OJjuPY4l6NjnrDj",
-                  "name" : "Ram Miriyala",
-                  "type" : "artist",
-                  "uri" : "spotify:artist:4A2XSc4OJjuPY4l6NjnrDj"
-              } ],
-              "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RU", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
-              "disc_number" : 1,
-              "duration_ms" : 226083,
-              "explicit" : false,
-              "external_ids" : {
-                  "isrc" : "INM5B2107760"
-              },
-              "external_urls" : {
-                  "spotify" : "https://open.spotify.com/track/6qNCPMFrXaeVQuA3QFZ4F1"
-              },
-              "href" : "https://api.spotify.com/v1/tracks/6qNCPMFrXaeVQuA3QFZ4F1",
-              "id" : "6qNCPMFrXaeVQuA3QFZ4F1",
-              "is_local" : false,
-              "name" : "Puttene Prema",
-              "popularity" : 47,
-              "preview_url" : "https://p.scdn.co/mp3-preview/8857fab350b39595c912e6913d2f0f1c8826a4d1?cid=f25d283eae8046588034aee0a42c0f31",
-              "track_number" : 1,
-              "type" : "track",
-              "uri" : "spotify:track:6qNCPMFrXaeVQuA3QFZ4F1"
-              }
-          },
-          ....
-      ],
-      "limit" : 20,
-      "next" : "https://api.spotify.com/v1/browse/categories?offset=20&limit=20",
-      "offset" : 0,
-      "previous" : null,
-      "total" : 58
+    ],
+    "id": "51b4602f-b0f2-4c81-98e0-a2a409b13926",
+    "overview": "Supervillains Harley Quinn, Bloodsport, Peacemaker and a collection of nutty cons at Belle Reve prison join the super-secret, super-shady Task Force X as they are dropped off at the remote, enemy-infused island of Corto Maltese.",
+    "poster_path": "/rjkmN1dniUHVYAtwuV3Tji7FsDO.jpg",
+    "release_date": "2021-09-30",
+    "runtime": 97,
+    "similar_movies": [
+      {
+        "backdrop_path": "https://assets.ccbp.in/frontend/react-js/movies-app/dune-movie-background-v0.png",
+        "id": "c6ef2389-078a-4117-b2dd-1dee027e5e8e",
+        "overview": "Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people.",
+        "poster_path": "https://assets.ccbp.in/frontend/react-js/movies-app/dune-movie-poster.png",
+        "title": "Dune"
+      },
+      {
+        "backdrop_path": "https://assets.ccbp.in/frontend/react-js/movies-app/no-time-to-die-movie-background-v0.png",
+        "id": "92c2cde7-d740-443d-8929-010b46cb0305",
+        "overview": "Bond has left active service and is enjoying a tranquil life in Jamaica. His peace is short-lived when his old friend Felix Leiter from the CIA turns up asking for help. The mission to rescue a kidnapped scientist turns out to be far more treacherous than expected, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.",
+        "poster_path": "https://assets.ccbp.in/frontend/react-js/movies-app/no-time-to-die-movie-poster.png",
+        "title": "No Time to Die"
+      },
+      {
+        "backdrop_path": "https://assets.ccbp.in/frontend/react-js/movies-app/shang-chi-and-the-legend-of-the-ten-rings-movie-background-v0.png",
+        "id": "046084e1-a782-4086-b723-f98c5c57ebc0",
+        "overview": "Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.",
+        "poster_path": "https://assets.ccbp.in/frontend/react-js/movies-app/shang-chi-and-the-legend-of-the-ten-rings-movie-poster.png",
+        "title": "Shang-Chi and the Legend of the Ten Rings"
+      },
+      {
+        "backdrop_path": "https://assets.ccbp.in/frontend/react-js/movies-app/grindhouse-movie-background-v0.png",
+        "id": "efb33428-5527-44d0-a713-1aeef4d56968",
+        "overview": "Austin's hottest DJ, Jungle Julia, sets out into the night to unwind with her two friends Shanna and Arlene. Covertly tracking their moves is Stuntman Mike, a scarred rebel leering from behind the wheel of his muscle car, revving just feet away.",
+        "poster_path": "https://assets.ccbp.in/frontend/react-js/movies-app/grindhouse-movie-poster.png",
+        "title": "Death Proof"
+      }
+    ],
+    "spoken_languages": [
+      {
+        "id": "4bc5f2cf-04d6-4064-bd0d-fc927fda507d",
+        "english_name": "English"
+      }
+    ],
+    "title": "Venom: Let There Be Carnage",
+    "vote_average": 6.8,
+    "vote_count": 1514
   }
-  ```
+}
+```
 
-- Playlists Route :
+**Search Movies API**
 
-  - **Note:**
+#### API: `https://apis.ccbp.in/movies-app/movies-search?search={searchText}`
 
-    - Get User Name from Get UserInfo API
-    - In this API you will get your playlists as response, you should add a few playlists in your account to see the list of playlists, you can access the list of playlists from the response using the key `items`.
+#### Example: `https://apis.ccbp.in/movies-app/movies-search?search=Venom`
 
-    ```js
-    'https://api.spotify.com/v1/users/${username}/playlists?limit=50'
+#### Method: `GET`
 
-    ```
+#### Description:
 
-    - Sample response object:
+Returns a response containing the list of movies and their movie names should includes the given searchText
 
-    ```json
+#### Sample Response
+
+```json
+{
+  "results": [
     {
-        "href" : "https://api.spotify.com/v1/users/tel1grq8ely359wesuv83nezp/playlists?offset=0&limit=50",
-        "items" : [
-            {
-                "collaborative" : false,
-                "description" : "",
-                "external_urls" : {
-                "spotify" : "https://open.spotify.com/playlist/12zGJe6oEH6ow3ZPPlZjHW"
-                },
-                "href" : "https://api.spotify.com/v1/playlists/12zGJe6oEH6ow3ZPPlZjHW",
-                "id" : "12zGJe6oEH6ow3ZPPlZjHW",
-                "images" : [ ],
-                "name" : "My Playlist #2",
-                "owner" : {
-                "display_name" : "Bobby",
-                "external_urls" : {
-                    "spotify" : "https://open.spotify.com/user/tel1grq8ely359wesuv83nezp"
-                },
-                "href" : "https://api.spotify.com/v1/users/tel1grq8ely359wesuv83nezp",
-                "id" : "tel1grq8ely359wesuv83nezp",
-                "type" : "user",
-                "uri" : "spotify:user:tel1grq8ely359wesuv83nezp"
-                },
-                "primary_color" : null,
-                "public" : false,
-                "snapshot_id" : "MSw4YWFiNWI5NTYyZTEwN2FmMDY5MTBhNDJlYzZmMjAyMjQ2OTcxOWFm",
-                "tracks" : {
-                "href" : "https://api.spotify.com/v1/playlists/12zGJe6oEH6ow3ZPPlZjHW/tracks",
-                "total" : 0
-                },
-                "type" : "playlist",
-                "uri" : "spotify:playlist:12zGJe6oEH6ow3ZPPlZjHW"
-            },
-            ....
-        ],
-        "limit" : 20,
-        "next" : "https://api.spotify.com/v1/browse/categories?offset=20&limit=20",
-        "offset" : 0,
-        "previous" : null,
-        "total" : 58
-    }
-    ```
+      "backdrop_path": "https://assets.ccbp.in/frontend/react-js/movies-app/venom-let-there-be-carnage-movie-background-v0.png",
+      "id": "51b4602f-b0f2-4c81-98e0-a2a409b13926",
+      "overview": "After finding a host body in investigative reporter Eddie Brock, the alien symbiote must face a new enemy, Carnage, the alter ego of serial killer Cletus Kasady.",
+      "poster_path": "https://assets.ccbp.in/frontend/react-js/movies-app/venom-let-there-be-carnage-movie-poster.png",
+      "title": "Venom: Let There Be Carnage"
+    },
+    ...
+  ],
+  "total": 10
+}
+```
 
-- Get Search Results :
+</details>
 
-  - **Note:** The value of the search input should be given in the place of searchInputValue
+### User Credentials
 
-    ```js
-    'https://api.spotify.com/v1/search?type=track,playlist&q=${searchInputValue}&market=from_token'
+<details>
+<summary>Click to view user credentials</summary>
 
-    ```
+<br/>
 
-    - Sample response object:
+**You can use any one of the following credentials**
 
-    ```json
-    {
-        "tracks" : {
-            "href" : "https://api.spotify.com/v1/search?query=TELUGU&type=track&market=from_token&offset=0&limit=20",
-            "items" : [
-                {
-                    "album" : {
-                        "album_type" : "single",
-                        "artists" : [ {
-                        "external_urls" : {
-                            "spotify" : "https://open.spotify.com/artist/2FgHPfRprDaylrSRVf1UlN"
-                        },
-                        "href" : "https://api.spotify.com/v1/artists/2FgHPfRprDaylrSRVf1UlN",
-                        "id" : "2FgHPfRprDaylrSRVf1UlN",
-                        "name" : "Thaman S",
-                        "type" : "artist",
-                        "uri" : "spotify:artist:2FgHPfRprDaylrSRVf1UlN"
-                        } ],
-                        "external_urls" : {
-                        "spotify" : "https://open.spotify.com/album/2dnfny8QAiGbUk9NI2P9c2"
-                        },
-                        "href" : "https://api.spotify.com/v1/albums/2dnfny8QAiGbUk9NI2P9c2",
-                        "id" : "2dnfny8QAiGbUk9NI2P9c2",
-                        "images" : [ {
-                        "height" : 640,
-                        "url" : "https://i.scdn.co/image/ab67616d0000b27363118748c712b6ac32c0feec",
-                        "width" : 640
-                        }, {
-                        "height" : 300,
-                        "url" : "https://i.scdn.co/image/ab67616d00001e0263118748c712b6ac32c0feec",
-                        "width" : 300
-                        }, {
-                        "height" : 64,
-                        "url" : "https://i.scdn.co/image/ab67616d0000485163118748c712b6ac32c0feec",
-                        "width" : 64
-                        } ],
-                        "name" : "Ala Vaikunthapurramuloo",
-                        "release_date" : "2019-12-24",
-                        "release_date_precision" : "day",
-                        "total_tracks" : 1,
-                        "type" : "album",
-                        "uri" : "spotify:album:2dnfny8QAiGbUk9NI2P9c2"
-                    },
-                    "artists" : [ {
-                        "external_urls" : {
-                        "spotify" : "https://open.spotify.com/artist/4IKVDbCSBTxBeAsMKjAuTs"
-                        },
-                        "href" : "https://api.spotify.com/v1/artists/4IKVDbCSBTxBeAsMKjAuTs",
-                        "id" : "4IKVDbCSBTxBeAsMKjAuTs",
-                        "name" : "Armaan Malik",
-                        "type" : "artist",
-                        "uri" : "spotify:artist:4IKVDbCSBTxBeAsMKjAuTs"
-                    }, {
-                        "external_urls" : {
-                        "spotify" : "https://open.spotify.com/artist/2FgHPfRprDaylrSRVf1UlN"
-                        },
-                        "href" : "https://api.spotify.com/v1/artists/2FgHPfRprDaylrSRVf1UlN",
-                        "id" : "2FgHPfRprDaylrSRVf1UlN",
-                        "name" : "Thaman S",
-                        "type" : "artist",
-                        "uri" : "spotify:artist:2FgHPfRprDaylrSRVf1UlN"
-                    } ],
-                    "disc_number" : 1,
-                    "duration_ms" : 198782,
-                    "explicit" : false,
-                    "external_ids" : {
-                        "isrc" : "INA091916753"
-                    },
-                    "external_urls" : {
-                        "spotify" : "https://open.spotify.com/track/0dnDTvdUco2UbaBjUtPxNS"
-                    },
-                    "href" : "https://api.spotify.com/v1/tracks/0dnDTvdUco2UbaBjUtPxNS",
-                    "id" : "0dnDTvdUco2UbaBjUtPxNS",
-                    "is_local" : false,
-                    "is_playable" : true,
-                    "name" : "Buttabomma - Telugu",
-                    "popularity" : 63,
-                    "preview_url" : "https://p.scdn.co/mp3-preview/92f167ab9ce9c48e104b90715a7f175d6bba5fb3?cid=f25d283eae8046588034aee0a42c0f31",
-                    "track_number" : 1,
-                    "type" : "track",
-                    "uri" : "spotify:track:0dnDTvdUco2UbaBjUtPxNS"
-                },
-                ....
-            ],
-            "limit" : 20,
-            "next" : "https://api.spotify.com/v1/search?query=TELUGU&type=track&market=from_token&offset=20&limit=20",
-            "offset" : 0,
-            "previous" : null,
-            "total" : 3947
-        },
-        "playlists" : {
-            "href" : "https://api.spotify.com/v1/search?query=TELUGU&type=playlist&market=from_token&offset=0&limit=20",
-            "items" : [
-                {
-                    "collaborative" : false,
-                    "description": "The best love track from Tolly World!",
-                    "external_urls" : {
-                        "spotify" : "https://open.spotify.com/playlist/37i9dQZF1DX44F1QWqYoaV"
-                    },
-                    "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1DX44F1QWqYoaV",
-                    "id" : "37i9dQZF1DX44F1QWqYoaV",
-                    "images" : [ {
-                        "height" : null,
-                        "url" : "https://i.scdn.co/image/ab67706f00000003b8254e36f9df0ed6e8aba38f",
-                        "width" : null
-                    } ],
-                    "name" : "Telugu Romance",
-                    "owner" : {
-                        "display_name" : "Spotify",
-                        "external_urls" : {
-                        "spotify" : "https://open.spotify.com/user/spotify"
-                        },
-                        "href" : "https://api.spotify.com/v1/users/spotify",
-                        "id" : "spotify",
-                        "type" : "user",
-                        "uri" : "spotify:user:spotify"
-                    },
-                    "primary_color" : null,
-                    "public" : null,
-                    "snapshot_id" : "MTYyNTI5NzIxMiwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
-                    "tracks" : {
-                        "href" : "https://api.spotify.com/v1/playlists/37i9dQZF1DX44F1QWqYoaV/tracks",
-                        "total" : 60
-                    },
-                    "type" : "playlist",
-                    "uri" : "spotify:playlist:37i9dQZF1DX44F1QWqYoaV"
-                },
-                ....
-            ]
-            "limit" : 20,
-            "next" : "https://api.spotify.com/v1/search?query=TELUGU&type=playlist&market=from_token&offset=20&limit=20",
-            "offset" : 0,
-            "previous" : null,
-            "total" : 23766
-        }
-    }
-    ```
+```text
+  username: aakash
+  password: sky@007
+```
 
+```text
+  username: agastya
+  password: myth#789
+```
+
+```text
+  username: advika
+  password: world@5
+```
+
+```text
+  username: binita
+  password: modest*6
+```
+
+```text
+  username: chetan
+  password: vigor$life
+```
+
+```text
+  username: deepak
+  password: lightstar@1
+```
+
+```text
+  username: harshad
+  password: joy@85
+```
+
+```text
+  username: kapil
+  password: moon$008
+```
+
+```text
+ username: rahul
+ password: rahul@2021
+```
+
+```text
+  username: shravya
+  password: musical#stone
+```
+
+```text
+  username: saira
+  password: princess@9
+```
+
+<br/>
 </details>
 
 ### Stretch Goals
@@ -1098,19 +604,21 @@ If you complete the main features of the project you can try out the below featu
 <details>
 <summary>Additional Functionality to be added</summary>
 
-- Users should be able to view and use the website responsively on a mobile, tablet, desktop devices.
-- Search Route
-  - Users should be able to search for playlists and tracks.
-  - When the user provides the playlist name which is not in the database then the No results view should be displayed.
-  - When the users click a playlist, it should open a new page with a respective list of songs in that playlist.
-
+- Home Route
+  - An HTTP Get request should be made to **Top Rated Movies API URL** as well
+    - **_Loader_** should be displayed while fetching the data
+    - After the data is successfully fetched from the API
+      - Display the list of movies received from the top rated movies response
+    - If the HTTP GET request made is unsuccessful, then the failure view given in the **Figma** screens should be displayed
+      - When the **Try Again** button is clicked, then the HTTP GET request should be made to **Top Rated Movies API URL**
+- Users can browse popular movies & searched movies using pagination buttons.
 </details>
 
 ### Project Submission Instructions
 
-- For Mini Projects, you no need to submit the code using `ccbp submit RJSCP2G83E`, Though you submit the test cases may or may not succeed and you can ignore the result, Test cases will be added soon.
+- For Mini Projects, you can submit the test cases at your own pace. But we suggest you to submit the code to know the percentage of completion through test cases and that score will be considered for your interviews.
 
-- For Mini Projects, you need to only publish/deploy the code using `ccbp publish RJSCP2G83E domain_name.ccbp.tech`. So that our team will be able to see that code and deployed URL( Ex: something.ccbp.tech) and will share feedback to you if required.
+- Also it's important to publish your code frequently using `Step - 4` in the Instructions tab.
 
 > ### _Things to Keep in Mind_
 >
